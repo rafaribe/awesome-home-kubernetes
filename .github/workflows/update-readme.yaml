@@ -17,7 +17,7 @@ jobs:
     steps:
     - name: Get k8s-at-home token
       id: get-app-token
-      uses: getsentry/action-github-app-token@v1
+      uses: getsentry/action-github-app-token@v4.0.0
       with:
         app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
         private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
