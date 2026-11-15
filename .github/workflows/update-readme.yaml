@@ -43,7 +43,7 @@ jobs:
         python scripts/render_readme.py > README.md
 
     - name: Create commit
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         push_options: --force
         commit_message: Auto-generate README
